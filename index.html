@@ -1,0 +1,19 @@
+---
+layout: default
+title: Home
+---
+
+<section id="content" class="content">
+  {% for post in site.posts limit:1 %}
+    <article class="article">
+      <hgroup class="article-header">
+        <h2 class="title">{{ post.title }}</h2>
+        <h3 class="date">{{ post.date | date: "%B %d, %Y" }}</h3>
+      </hgroup>
+      <div class="article-body">
+        {{ post.content }}
+      </div>
+    </article>
+  {% endfor %}
+  <p class="more">More articles in the <a href="/archives">archives &rarr;</a></p>
+</section>

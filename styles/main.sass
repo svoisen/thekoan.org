@@ -1,0 +1,80 @@
+$the-color: #008c00
+$medium-grey: #999
+$light-grey: #f2f2f2
+$regular-font-family: "rooney-web", sans-serif
+
+body
+  border-top: 2px solid $the-color
+  font: normal 100%/1.5 $regular-font-family
+  text-rendering: optimizeLegibility
+
+small
+  font-size: 90%
+
+a
+  color: $the-color
+  text-decoration: none
+
+::selection, ::-moz-selection
+  background: $the-color
+  color: white
+
+.wrapper
+  max-width: 33em
+  margin: 0 auto 0 auto
+  padding: 0 2em 0 2em
+
+.header
+  padding: 0
+  margin: 0 0 2.3em 0
+  text-align: center
+  border-bottom: 1px solid $light-grey
+  h1
+    font-size: 3em
+    margin: 0.8em 0 0.8em 0
+    padding: 0
+    font-weight: 700
+
+.article
+  margin: 0 0 2.3em 0
+
+.article-header
+  text-align: center
+  margin-bottom: 2em
+  .title
+    font-size: 2em
+    margin: 0
+    padding: 0
+    font-weight: 500
+  .date
+    margin: 0
+    font-size: 1em
+    font-weight: 300
+    font-style: italic
+    color: $medium-grey
+
+.article-body
+  p
+    margin-bottom: 0
+  p+p
+    text-indent: 1.5em
+    margin-top: 0
+  p.tb
+    text-indent: 0
+    margin-top: 2em
+
+.footer
+  border-top: 1px solid $light-grey
+  margin: 2.5em 0 0 0
+  padding: 2.3em 0 4em 0
+
+.colored
+  color: $the-color
+
+.more
+  text-align: right
+  font-style: italic
+
+@media screen and (min-width: 768px)
+  body
+    font-size: 110%
