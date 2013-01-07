@@ -4,22 +4,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ site.title }} &raquo; {{ page.title }}</title>
-    <meta name="description" content="An experiemental publication in simple and mindful living." />
+    <meta name="description" content="An experiemental publication in simple, healthy, mindful living." />
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
     <script type="text/javascript" src="//use.typekit.net/yil5agv.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link href="/styles/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37457959-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <div id="wrapper" class="wrapper">
       <header id="header" class="header">
-        <h1>The K<span class="colored">ō</span>an</h1>
+        <a href="/" title="Return home"><h1>The K<span class="colored">ō</span>an</h1></a>
       </header>
 
       {{ content }}
 
       <footer id="footer" class="footer">
-        <p><small>All content on this site is released under an <a href="http://creativecommons.org/licenses/by/3.0/">Attribution 3.0</a> license. Feel free to use as you will, just please give credit.</small></p>
+        <p><small>All content on this site is released under an <a href="http://creativecommons.org/licenses/by/3.0/">Attribution 3.0</a> license.<br />Feel free to use as you will, just please give credit.</small></p>
       </footer>
     </div>
   </body>

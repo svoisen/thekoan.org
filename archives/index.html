@@ -2,3 +2,14 @@
 layout: default
 title: Archives
 ---
+
+<section id="content" class="content">
+  <ul class="articles">
+    {% for post in site.posts %}
+    <li>
+      <span class="date">{{ post.date | "B %-d, %Y }}</span>
+      <span class="title">{{ post.title }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
