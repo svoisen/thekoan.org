@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<section id="content" class="content">
+  <article class="article">
+    <hgroup class="article-header">
+      <h3 class="date"><span class="bg">{{ page.date | date: "%B %-d, %Y" }}</span></h3>
+      <h2 class="title">{{ page.title }}</h2>
+      <h3 class="byline">By {{ page.author }}</h3>
+    </hgroup>
+    <div class="article-body">
+      {{ content }}
+    </div>
+  </article>
+  <p class="more">More articles in the <a href="/archives">archives &rarr;</a></p>
+</section>

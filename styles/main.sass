@@ -1,19 +1,23 @@
 $foreground: #008c00
-$foreground-hover: desaturate(lighten($foreground, 10%), 10%)
-$background: #f6f2ed
-$medium-grey: darken($background, 20%)
+$foreground-hover: desaturate(lighten($foreground, 40%), 100%)
+$background: #fff
+$medium-grey: darken($background, 30%)
 $light-grey: darken($background, 5%) 
-$dark-grey: #333
+$dark-grey: darken($background, 70%)
 $regular-font-family: "rooney-web", "times new roman", serif
+$transition-time: 0.8s
 
 body
   border-top: 2px solid $foreground
-  background-color: #f6f2ed
+  background-color: $background
   font: normal 100%/1.5 $regular-font-family
   text-rendering: optimizeLegibility
 
 small
-  font-size: 90%
+  font-size: 0.9em
+
+strong
+  font-weight: 700
 
 a
   color: $foreground
@@ -23,11 +27,11 @@ a
 a:hover
   color: $foreground-hover
   border-bottom: 1px solid $light-grey
-  -o-transition: 0.5s
-  -ms-transition: 0.5s
-  -moz-transition: 0.5s
-  -webkit-transition: 0.5s
-  transition: 0.5s
+  -o-transition: $transition-time
+  -ms-transition: $transition-time
+  -moz-transition: $transition-time
+  -webkit-transition: $transition-time
+  transition: $transition-time
 
 blockquote
   margin-left: 0
@@ -99,12 +103,32 @@ blockquote
     margin-top: 2em
 
 .footer
+  clear: both
   border-top: 1px solid $light-grey
   margin: 2.5em 0 0 0
   padding: 2.3em 0 4em 0
 
+.articles
+  padding-bottom: 2.5em
+  li
+    clear: both
+    list-style: none
+    .date
+      font-weight: 300
+      color: $medium-grey
+      text-align: right
+      float: left
+      width: 25%
+      padding-right: 2em
+    .title
+      float: left
+
 .colored
   color: $foreground
+
+.lead
+  font-weight: 500 
+  font-size: 1.4em
 
 .more
   text-align: right

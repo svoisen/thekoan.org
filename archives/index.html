@@ -4,11 +4,15 @@ title: Archives
 ---
 
 <section id="content" class="content">
+  <hgroup class="article-header">
+    <h2 class="title">Archives</h2>
+  </hgroup>
+
   <ul class="articles">
     {% for post in site.posts %}
     <li>
-      <span class="date">{{ post.date | "B %-d, %Y }}</span>
-      <span class="title">{{ post.title }}</span>
+      <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+      <span class="title"><a href="{{ post.id }}" title="Read {{ post.title }}">{{ post.title }}</a></span>
     </li>
     {% endfor %}
   </ul>
