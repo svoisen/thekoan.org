@@ -11,8 +11,8 @@ title: Archives
   <ul class="articles">
     {% for post in site.posts %}
     <li>
+      <span class="title"><a href="{{ post.id }}" title="Read {{ post.title }}">{{ post.title }}</a></span><br />
       <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
-      <span class="title"><a href="{{ post.id }}" title="Read {{ post.title }}">{{ post.title }}</a></span>
     </li>
     {% endfor %}
   </ul>
