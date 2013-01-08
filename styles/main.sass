@@ -1,6 +1,7 @@
-$foreground: #008c00
-$foreground-hover: desaturate(lighten($foreground, 40%), 100%)
+$highlight: #008c00
+$highlight-hover: desaturate(lighten($highlight, 40%), 100%)
 $background: #fff
+$foreground: #333
 $medium-grey: darken($background, 30%)
 $light-grey: darken($background, 5%) 
 $dark-grey: darken($background, 70%)
@@ -8,9 +9,10 @@ $regular-font-family: "rooney-web", "times new roman", serif
 $transition-time: 0.8s
 
 body
-  border-top: 2px solid $foreground
+  border-top: 2px solid $highlight
   background-color: $background
-  font: normal 100%/1.5 $regular-font-family
+  color: $foreground
+  font: 400 100%/1.65 $regular-font-family
   text-rendering: optimizeLegibility
 
 small
@@ -20,12 +22,12 @@ strong
   font-weight: 700
 
 a
-  color: $foreground
+  color: $highlight
   text-decoration: none
   border-bottom: 1px dotted $light-grey
 
 a:hover
-  color: $foreground-hover
+  color: $highlight-hover
   border-bottom: 1px solid $light-grey
   -o-transition: $transition-time
   -ms-transition: $transition-time
@@ -38,16 +40,15 @@ blockquote
   padding-left: 1em
   border-left: 5px solid $light-grey
   color: $dark-grey
-  font-weight: 300
 
 ::selection, ::-moz-selection
-  background: $foreground
+  background: $highlight
   color: white
 
 .wrapper
-  max-width: 33em
+  max-width: 27em
   margin: 0 auto 0 auto
-  padding: 0 2em 0 2em
+  padding: 0 1em 0 1em
 
 .header
   padding: 0
@@ -76,7 +77,7 @@ blockquote
     font-weight: 500
   .date
     .bg
-      padding: 0 0.5em 0 0.5em
+      padding: 0 0.75em 0 0.75em
       background-color: $background
     position: absolute
     margin: 0
@@ -89,7 +90,7 @@ blockquote
   .byline
     margin: 0
     font-size: 1em
-    font-weight: 300
+    font-weight: 400
     font-style: italic
 
 .article-body
@@ -114,7 +115,6 @@ blockquote
     clear: both
     list-style: none
     .date
-      font-weight: 300
       color: $medium-grey
       text-align: right
       float: left
@@ -124,7 +124,7 @@ blockquote
       float: left
 
 .colored
-  color: $foreground
+  color: $highlight
 
 .lead
   font-weight: 500 
@@ -134,6 +134,17 @@ blockquote
   text-align: right
   font-style: italic
 
+@media screen and (min-width: 580px)
+  body
+    font-weight: 300
+
 @media screen and (min-width: 768px)
   body
-    font-size: 110%
+    font-size: 125%
+
+  .wrapper
+    padding: 0 2em 0 2em
+    max-width: 33em
+
+  .lead
+    font-weight: 400
