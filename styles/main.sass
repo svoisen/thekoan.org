@@ -1,7 +1,7 @@
 $highlight: #008c00
 $highlight-hover: desaturate(lighten($highlight, 40%), 100%)
 $background: #fff
-$foreground: #333
+$foreground: #222
 $medium-grey: darken($background, 30%)
 $light-grey: darken($background, 5%) 
 $dark-grey: darken($background, 70%)
@@ -16,7 +16,7 @@ body
   text-rendering: optimizeLegibility
 
 small
-  font-size: 0.9em
+  font-size: 0.8em
 
 strong
   font-weight: 700
@@ -81,7 +81,7 @@ blockquote
       background-color: $background
     position: absolute
     margin: 0
-    top: -3.4em
+    top: -3.425em
     font-size: 0.9em
     font-weight: 300
     color: $medium-grey
@@ -97,13 +97,14 @@ blockquote
   p
     margin-bottom: 0
   p+p
-    text-indent: 1.5em
+    text-indent: 2em
     margin-top: 0
   p.tb
     text-indent: 0
     margin-top: 2em
 
 .footer
+  text-align: center
   clear: both
   border-top: 1px solid $light-grey
   margin: 2.5em 0 0 0
@@ -136,20 +137,18 @@ blockquote
   text-align: right
   font-style: italic
 
-@media screen and (min-width: 580px)
-  body
-    font-weight: 300
+.copyright
+  font-size: 0.8em
+  line-height: 1.65
 
 @media screen and (min-width: 768px)
   body
     font-size: 125%
+    line-height: 1.8
 
   .wrapper
     padding: 0 2em 0 2em
     max-width: 33em
-
-  .lead
-    font-weight: 400
 
   .articles
     li
@@ -160,7 +159,6 @@ blockquote
         top: 0
         left: 0
         position: absolute
-        font-size: 1em
       .title
         position: absolute
         left: 12em
