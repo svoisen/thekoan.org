@@ -94,6 +94,10 @@ blockquote
     font-style: italic
 
 .article-body
+  h2, h3
+    margin-bottom: 0
+  h2+p, h3+p
+    margin-top: 0
   p
     margin-bottom: 0
   p+p
@@ -143,6 +147,7 @@ blockquote
 
 @media screen and (min-width: 768px)
   body
+    border-top: 4px solid $highlight
     font-size: 125%
     line-height: 1.8
 
