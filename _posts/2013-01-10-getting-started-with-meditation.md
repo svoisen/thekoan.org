@@ -16,7 +16,7 @@ I had browsed many of my dad’s books, and had even read a few of them, but too
 
 It took two months after diagnosis for me to stop letting my ego get the better of me.
 
-## Why Meditate
+## Why Meditate?
 
 In the past decade, scientists have studied meditation extensively. It turns out that it was not as “out there” as I may have thought. Discussion of meditation has instead moved well beyond the fringes of popular culture, the topic having even [graced the cover of TIME magazine](http://www.time.com/time/covers/0,16641,20030804,00.html) in 2003.
 
@@ -47,7 +47,7 @@ That said, many friends have often asked me how to start such an exploration. Wh
 
 ### Read “Mindfulness in Plain English”
 
-[Mindfulness in Plain English](http://www.urbandharma.org/udharma4/mpe1-4.html) is the best *free* how-to book on introductory meditation I’ve ever come across. It may be the best how-to book on introductory meditation, period.
+[Mindfulness in Plain English](http://www.urbandharma.org/udharma4/mpe1-4.html) is the best *free* how-to book on introductory meditation I’ve ever come across ([PDF](http://www.urbandharma.org/pdf/mindfulness_in_plain_english.pdf)). It may be the best how-to book on introductory meditation, period.
 
 “Mindfulness in Plain English” offers an in-depth, step-by-step guide to Vipassana, or “insight,” meditation. Though Vipassana has a Buddhist heritage, basic Vipassana offers a simple, easy, no-frills, *non-denominational* introduction to meditation that works for nearly everyone.
 
